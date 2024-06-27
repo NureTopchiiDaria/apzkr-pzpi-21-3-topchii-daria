@@ -1,0 +1,29 @@
+<div class="rooms-container">
+  <div class="room-card" *ngFor="let room of rooms">
+    <div class="room-header">
+      <h2>{{ room.name }}</h2>
+    </div>
+    <div class="room-content">
+      <div class="room-details">
+        <p><strong>{{ 'approvedLabel' | translate }}:</strong> {{ room.isApproved ? ('yes' | translate) : ('no' | translate) }}</p>
+        <p><strong>{{ 'roomIDLabel' | translate }}:</strong> {{ room.id }}</p>
+        <p><strong>{{ 'dateTimeLabel' | translate }}:</strong> {{ room.dateTime | date:'medium' }}</p>
+        <p><strong>{{ 'informationLabel' | translate }}:</strong> {{ room.information }}</p>
+        <p><strong>{{ 'tripLengthLabel' | translate }}:</strong> {{ room.tripLength }} km</p>
+      </div>
+      <div class="room-map">
+        <div class="map-container">
+          <google-map [center]="center" [zoom]="zoom" height="300px" width="100%" 
+            (mapReady)="onMapReady($event, {lat: room.startLocation[1], lng: room.startLocation[0]}, {lat: room.endLocation[1], lng: room.endLocation[0]})">
+            <map-marker *ngIf="room.startLocation" [position]="{lat: room.startLocation[1], lng: room.startLocation[0]}" [label]="'A'"></map-marker>
+            <map-marker *ngIf="room.endLocation" [position]="{lat: room.endLocation[1], lng: room.endLocation[0]}" [label]="'B'"></map-marker>
+          </google-map>
+        </div>
+      </div>
+    </div>
+    <div class="room-actions">
+      <button mat-button (click)="viewRoom(room.id)">{{ 'viewButton' | translate }}</button>
+      <button mat-button (click)="editRoom(room.id)">{{ 'editButton' | translate }}</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+<div class="auth-container">
+  <mat-card class="auth-card">
+    <mat-card-title i18n="@@signUpTitle">Sign Up</mat-card-title>
+    <mat-card-content>
+      <form (ngSubmit)="onRegisterSubmit()" #registerForm="ngForm">
+        <mat-form-field appearance="outline">
+          <mat-label i18n="@@usernameLabel">Username</mat-label>
+          <input matInput [(ngModel)]="userName" name="userName" required>
+          <mat-error *ngIf="registerForm.controls['userName']?.invalid && registerForm.controls['userName']?.touched" i18n="@@usernameRequiredError">
+            Username is required.
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label i18n="@@emailLabel">Email</mat-label>
+          <input matInput [(ngModel)]="email" name="email" required email>
+          <mat-error *ngIf="registerForm.controls['email']?.invalid && registerForm.controls['email']?.touched">
+            <ng-container *ngIf="registerForm.controls['email']?.errors?.['required']" i18n="@@emailRequiredError">Email is required.</ng-container>
+            <ng-container *ngIf="registerForm.controls['email']?.errors?.['email']" i18n="@@invalidEmailError">Invalid email format.</ng-container>
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label i18n="@@passwordLabel">Password</mat-label>
+          <input matInput [(ngModel)]="password" name="password" required minlength="6" type="password">
+          <mat-error *ngIf="registerForm.controls['password']?.invalid && registerForm.controls['password']?.touched">
+            <ng-container *ngIf="registerForm.controls['password']?.errors?.['required']" i18n="@@passwordRequiredError">Password is required.</ng-container>
+            <ng-container *ngIf="registerForm.controls['password']?.errors?.['minlength']" i18n="@@passwordMinLengthError">Password must be at least 6 characters long.</ng-container>
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label i18n="@@confirmPasswordLabel">Confirm Password</mat-label>
+          <input matInput [(ngModel)]="rePassword" name="rePassword" required type="password">
+          <mat-error *ngIf="registerForm.controls['rePassword']?.invalid && registerForm.controls['rePassword']?.touched" i18n="@@passwordConfirmationRequiredError">
+            Password confirmation is required.
+          </mat-error>
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit" [disabled]="registerForm.invalid" i18n="@@signUpButton">Sign Up</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

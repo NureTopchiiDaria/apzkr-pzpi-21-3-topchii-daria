@@ -1,0 +1,24 @@
+<mat-toolbar color="primary">
+  <img src="assets/logo.png" alt="Logo" class="logo">
+  <span>TravelSync</span>
+  <span class="spacer"></span>
+  <div class="language-switcher">
+    <button (click)="switchLanguage('en')">EN</button>
+    <button (click)="switchLanguage('ukr')">UA</button>
+  </div>
+  <a mat-button [routerLink]="['/', currentLang, 'home']" i18n="@@homeLink">Home</a>
+  <a mat-button [routerLink]="['/', currentLang, 'user-profile']" i18n="@@profileLink">Profile</a>
+  <a mat-button [routerLink]="['/', currentLang, 'rooms']" i18n="@@journeysLink">Journeys</a>
+  <a mat-button [routerLink]="['/', currentLang, 'create']" i18n="@@createJourneyLink">Create Journey</a>
+  <ng-container *ngIf="isLoggedIn; else loggedOut">
+    <button mat-button (click)="logout()" i18n="@@logoutButton">Logout</button>
+  </ng-container>
+  <ng-template #loggedOut>
+    <a mat-button [routerLink]="['/', currentLang, 'login']" i18n="@@loginLink">Log in</a>
+    <a mat-button [routerLink]="['/', currentLang, 'register']" i18n="@@signUpLink">Sign up</a>
+  </ng-template>
+</mat-toolbar>
+<main class="content">
+  <router-outlet></router-outlet>
+</main>
+<app-footer class="footer"></app-footer>

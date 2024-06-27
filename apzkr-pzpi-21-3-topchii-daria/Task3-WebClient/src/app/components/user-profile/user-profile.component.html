@@ -1,0 +1,42 @@
+<div *ngIf="user" class="user-profile">
+  <div class="profile-header">
+    <img *ngIf="user.profilePicture" [src]="'data:image/jpeg;base64,' + user.profilePicture" alt="Profile Picture" class="profile-img">
+  </div>
+  <form (ngSubmit)="updateUserProfile()" class="profile-form">
+    <div class="form-group">
+      <label for="userName">{{ 'userNameLabel' | translate }}</label>
+      <input id="userName" [(ngModel)]="user.userName" name="userName" placeholder="{{user.userName}}">
+    </div>
+    <div class="form-group">
+      <label for="email">{{ 'emailLabel' | translate }}</label>
+      <input id="email" [(ngModel)]="user.email" name="email" placeholder="{{user.email}}" readonly>
+    </div>
+    <div class="form-group">
+      <label for="height">{{ 'heightLabel' | translate }}</label>
+      <input id="height" [(ngModel)]="user.height" name="height" placeholder="{{user.height}}">
+    </div>
+    <div class="form-group">
+      <label for="sex">{{ 'sexLabel' | translate }}</label>
+      <select id="sex" [(ngModel)]="user.sex" name="sex">
+        <option [value]="true">{{ 'maleOption' | translate }}</option>
+        <option [value]="false">{{ 'femaleOption' | translate }}</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="birthDate">{{ 'birthDateLabel' | translate }}</label>
+      <input id="birthDate" type="date" [(ngModel)]="user.birthDate" name="birthDate" placeholder="{{user.birthDate | date:'yyyy-MM-dd'}}">
+    </div>
+    <div class="form-group">
+      <label for="information">{{ 'informationLabel' | translate }}</label>
+      <textarea id="information" [(ngModel)]="user.information" name="information" placeholder="{{user.information}}"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="profilePicture">{{ 'profilePictureLabel' | translate }}</label>
+      <input id="profilePicture" type="file" (change)="onFileSelected($event)">
+    </div>
+    <div class="form-actions">
+      <button type="submit" class="btn-primary">{{ 'updateButton' | translate }}</button>
+      <button type="button" (click)="navigateToMyJourneys()" class="btn-secondary">{{ 'myJourneysButton' | translate }}</button>
+    </div>
+  </form>
+</div>

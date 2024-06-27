@@ -1,0 +1,47 @@
+mat-toolbar {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: white;
+  padding: 0 20px;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 20px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+mat-toolbar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+mat-toolbar a:hover {
+  text-decoration: underline;
+}
+
+button.mat-button {
+  color: white;
+}
+
+.footer {
+  background: #0072ff;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

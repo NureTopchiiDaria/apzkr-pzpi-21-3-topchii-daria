@@ -1,0 +1,28 @@
+<div class="auth-container">
+  <mat-card class="auth-card">
+    <mat-card-title i18n="@@addRoomTitle">Add Room</mat-card-title>
+    <mat-card-content>
+      <form (ngSubmit)="onSubmit()">
+        <mat-form-field appearance="outline">
+          <mat-label i18n="@@roomNameLabel">Name*</mat-label>
+          <input matInput [(ngModel)]="room.name" name="name" required>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label i18n="@@dateTimeLabel">Date and Time*</mat-label>
+          <input matInput [(ngModel)]="room.dateTime" name="dateTime" type="datetime-local" required>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label i18n="@@informationLabel">Information</mat-label>
+          <textarea matInput [(ngModel)]="room.information" name="information"></textarea>
+        </mat-form-field>
+        <div class="map-container">
+          <google-map [center]="center" [zoom]="zoom" height="400px" width="100%" (mapClick)="mapClick($event)">
+            <map-marker *ngIf="startLocation" [position]="startLocation" [label]="'A'"></map-marker>
+            <map-marker *ngIf="endLocation" [position]="endLocation" [label]="'B'"></map-marker>
+          </google-map>
+        </div>
+        <button mat-raised-button color="primary" type="submit" i18n="@@addRoomButton">Add Room</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

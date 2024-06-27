@@ -1,0 +1,11 @@
+<div *ngIf="userRooms.length > 0; else noJourneys">
+  <div *ngFor="let userRoom of userRooms">
+    <h3>{{ userRoom.room.name }}</h3>
+    <p><strong>{{ 'dateLabel' | translate }}:</strong> {{ userRoom.room.dateTime | date }}</p>
+    <p><strong>{{ 'detailsLabel' | translate }}:</strong> {{ userRoom.room.information }}</p>
+    <p><strong>{{ 'joinedOnLabel' | translate }}:</strong> {{ userRoom.joinDate | date }}</p>
+  </div>
+</div>
+<ng-template #noJourneys>
+  <p>{{ 'noJourneysText' | translate }}</p>
+</ng-template>

@@ -1,0 +1,22 @@
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .auth-card {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .map-container {
+    position: relative;
+    height: 400px;
+    margin-top: 20px;
+  }
+  
+  button {
+    margin-top: 20px;
+  }
+  

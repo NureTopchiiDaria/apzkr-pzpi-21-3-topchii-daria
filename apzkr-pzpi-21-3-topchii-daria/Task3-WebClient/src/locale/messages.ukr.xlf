@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="addRoomTitle" datatype="html">
+        <source>Add Room</source>
+        <target>Додати кімнату</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/add-room/add-room.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="roomNameLabel" datatype="html">
+        <source>Name*</source>
+        <target>Назва*</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/add-room/add-room.component.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dateTimeLabel" datatype="html">
+        <source>Date and Time*</source>
+        <target>Дата та час*</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/add-room/add-room.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="informationLabel" datatype="html">
+        <source>Information</source>
+        <target>Інформація</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/add-room/add-room.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">30,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="addRoomButton" datatype="html">
+        <source>Add Room</source>
+        <target>Додати кімнату</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/add-room/add-room.component.html</context>
+          <context context-type="linenumber">24,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footerText" datatype="html">
+        <source>© 2024 TravelSync. All rights reserved.</source>
+        <target>© 2024 TravelSync. Усі права захищені.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="privacyPolicy" datatype="html">
+        <source>Privacy Policy</source>
+        <target>Політика конфіденційності</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="termsOfService" datatype="html">
+        <source>Terms of Service</source>
+        <target>Умови використання</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">4,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="homeLink" datatype="html">
+        <source>Home</source>
+        <target>Головна</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aboutLink" datatype="html">
+        <source>About</source>
+        <target>Про нас</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactLink" datatype="html">
+        <source>Contact</source>
+        <target>Контакти</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header/header.component.html</context>
+          <context context-type="linenumber">6,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="loginTitle" datatype="html">
+        <source>Login</source>
+        <target>Вхід</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="emailLabel" datatype="html">
+        <source>Email</source>
+        <target>Електронна пошта</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="passwordLabel" datatype="html">
+        <source>Password</source>
+        <target>Пароль</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="loginButton" datatype="html">
+        <source>Login</source>
+        <target>Увійти</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.component.html</context>
+          <context context-type="linenumber">14,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dateLabel" datatype="html">
+        <source>Date:</source>
+        <target>Дата:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/my-journeys/my-journeys.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="detailsLabel" datatype="html">
+        <source>Details:</source>
+        <target>Деталі:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/my-journeys/my-journeys.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="joinedOnLabel" datatype="html">
+        <source>Joined On:</source>
+        <target>Приєднався:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/my-journeys/my-journeys.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="noJourneysText" datatype="html">
+        <source>You have no journeys.</source>
+        <target>У вас немає подорожей.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/my-journeys/my-journeys.component.html</context>
+          <context context-type="linenumber">10,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="signUpTitle" datatype="html">
+        <source>Sign Up</source>
+        <target>Зареєструватися</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="usernameLabel" datatype="html">
+        <source>Username</source>
+        <target>Ім'я користувача</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="usernameRequiredError" datatype="html">
+        <source> Username is required. </source>
+        <target> Ім'я користувача обов'язкове. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="emailRequiredError" datatype="html">
+        <source>Email is required.</source>
+        <target>Електронна пошта обов'язкова.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="invalidEmailError" datatype="html">
+        <source>Invalid email format.</source>
+        <target>Недійсний формат електронної пошти.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="passwordRequiredError" datatype="html">
+        <source>Password is required.</source>
+        <target>Пароль обов'язковий.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="passwordMinLengthError" datatype="html">
+        <source>Password must be at least 6 characters long.</source>
+        <target>Пароль має бути не менше 6 символів.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="confirmPasswordLabel" datatype="html">
+        <source>Confirm Password</source>
+        <target>Підтвердити Пароль</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">30,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="passwordConfirmationRequiredError" datatype="html">
+        <source> Password confirmation is required. </source>
+        <target> Підтвердження пароля обов'язкове. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">33,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="signUpButton" datatype="html">
+        <source>Sign Up</source>
+        <target>Зареєструватися</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/register/register.component.html</context>
+          <context context-type="linenumber">36,38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="userNameLabel" datatype="html">
+        <source>Name:</source>
+        <target>Ім'я:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="heightLabel" datatype="html">
+        <source>Height:</source>
+        <target>Зріст:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sexLabel" datatype="html">
+        <source>Sex:</source>
+        <target>Стать:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="maleOption" datatype="html">
+        <source>Male</source>
+        <target>Чоловік</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="femaleOption" datatype="html">
+        <source>Female</source>
+        <target>Жінка</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="birthDateLabel" datatype="html">
+        <source>Birth Date:</source>
+        <target>Дата народження:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="profilePictureLabel" datatype="html">
+        <source>Profile Picture:</source>
+        <target>Фотографія профілю:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">34,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="updateButton" datatype="html">
+        <source>Update</source>
+        <target>Оновити</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">38,39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="myJourneysButton" datatype="html">
+        <source>My Journeys</source>
+        <target>Мої подорожі</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/user-profile/user-profile.component.html</context>
+          <context context-type="linenumber">39,41</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

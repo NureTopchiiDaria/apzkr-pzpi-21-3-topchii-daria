@@ -1,0 +1,26 @@
+.room-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.room-info {
+  width: 55%;
+}
+
+.map-container {
+  width: 30%;
+}
+
+.action-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.admin-info {
+  margin-left: 20px;
+}
+
+button {
+  margin-top: 20px;
+}

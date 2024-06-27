@@ -1,0 +1,21 @@
+<div class="room-details">
+  <div class="room-info">
+    <h2>{{ room?.name }}</h2>
+    <p><strong>{{ 'approvedLabel' | translate }}:</strong> {{ room?.isApproved ? ('yes' | translate) : ('no' | translate) }}</p>
+    <p><strong>{{ 'dateTimeLabel' | translate }}:</strong> {{ room?.dateTime | date: 'medium' }}</p>
+    <p><strong>{{ 'informationLabel' | translate }}:</strong> {{ room?.information }}</p>
+    <div class="action-section">
+      <button mat-button (click)="joinRoom()">{{ 'joinButton' | translate }}</button>
+      <div class="admin-info" *ngIf="admin">
+        <p><strong>{{ 'adminNameLabel' | translate }}:</strong> {{ admin.userName }}</p>
+        <p><strong>{{ 'adminEmailLabel' | translate }}:</strong> {{ admin.email }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="map-container">
+    <google-map [center]="center" [zoom]="zoom" height="400px" width="100%">
+      <map-marker *ngIf="room?.startLocation" [position]="getStartPosition()" [label]="'A'"></map-marker>
+      <map-marker *ngIf="room?.endLocation" [position]="getEndPosition()" [label]="'B'"></map-marker>
+    </google-map>
+  </div>
+</div>

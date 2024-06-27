@@ -1,0 +1,143 @@
+/* Ensure the body and html take the full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #f0f2f5, #e0eafc); /* Subtle gradient background */
+}
+
+/* Content Area */
+main.content {
+  flex: 1;
+  padding: 16px;
+  background: #ffffff; /* White background for content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 1200px;
+  margin-top: 64px; /* Add margin to prevent overlap with header */
+}
+
+.rooms-container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background: #d7e3ff;
+  border-radius: 8px;
+}
+
+
+.room-card {
+  background: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.room-header h2 {
+  margin: 0;
+  color: #333;
+  font-size: 24px;
+}
+
+.room-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 15px;
+}
+
+.room-details {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.room-details p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.room-map {
+  flex: 1;
+  max-width: 400px;
+  height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.room-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.room-actions button {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.room-actions button:hover {
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
+}
+
+/* Header Styles */
+mat-toolbar {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: white;
+  padding: 0 20px;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 20px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+mat-toolbar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+mat-toolbar a:hover {
+  text-decoration: underline;
+}
+
+button.mat-button {
+  color: white;
+}
+
+/* Footer Styles */
+.footer {
+  background: #0072ff;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
